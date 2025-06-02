@@ -7,11 +7,12 @@ if [ $ret -ne 0 ] && [ $ret -ne 64 ] ; then
         exit 1
 fi
 
-cat <<EOF > ~/.myconfigrc
 yum install cargo -y
 cargo install ripgrep
+
+cat <<EOF >> ~/.myconfigrc
 export PATH=\$PATH:\$HOME/.cargo/bin
 alias less="less -N"
 EOF
 
-echo "source ~/.myconfigrc" >> ~/.bashrc
+cat "source ~/.myconfigrc" >> ~/.bashrc
