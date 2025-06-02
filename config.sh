@@ -7,7 +7,7 @@ if [ $ret -ne 0 ] && [ $ret -ne 64 ] ; then
         exit 1
 fi
 
-yum install cargo -y
+yum install cargo tmux vim tree -y
 cargo install ripgrep
 
 cat <<EOF >> ~/.myconfigrc
