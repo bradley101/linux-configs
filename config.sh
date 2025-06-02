@@ -15,4 +15,4 @@ export PATH=\$PATH:\$HOME/.cargo/bin
 alias less="less -N"
 EOF
 
-cat "source ~/.myconfigrc" >> ~/.bashrc
+echo "source ~/.myconfigrc" >> ~/.bashrc
